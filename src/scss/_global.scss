@@ -32,3 +32,26 @@
   --header-text-color-green: var(--colors-green-800);
   --header-text-color-blue: var(--colors-blue-950);
 }
+
+body {
+  color: var(--text-color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  @include mixins.text-preset-8;
+  align-items: center;
+  background-color: var(--colors-white);
+  border-radius: 28px;
+  color: var(--header-text-color-primary);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 8.75rem;
+  min-height: 3.5rem;
+}

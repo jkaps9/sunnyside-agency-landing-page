@@ -1,4 +1,50 @@
 @use "fonts";
 @use "reset";
 @use "global";
+@use "mixins";
 @use "sass:map";
+
+// HEADER
+header {
+  .header__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85rem;
+    padding: 2rem clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem) 0;
+    position: relative;
+  }
+
+  .nav__list {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .nav__item {
+    @include mixins.text-preset-10;
+    color: var(--colors-white);
+  }
+
+  .nav-toggle {
+    background: none;
+    border: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  header {
+    .nav-toggle {
+      height: 0;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .nav__list {
+      align-items: center;
+      display: flex;
+      gap: 3rem;
+      position: relative;
+      visibility: visible;
+    }
+  }
+}

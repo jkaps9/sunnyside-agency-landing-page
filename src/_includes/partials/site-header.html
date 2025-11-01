@@ -1,18 +1,24 @@
 <header>
-  <div class="container">
-    <nav>
-      <a
-        class="logo"
-        href="/"
-      >
-        {% include "svgs/logo.svg" %}
-      </a>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Services</a></li>
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="header__nav">
+    <a
+      class="header__logo"
+      href="/"
+    >
+      {% include "svgs/logo.svg" %}
+    </a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">About</a></li>
+      <li class="nav__item"><a href="#">Services</a></li>
+      <li class="nav__item"><a href="#">Projects</a></li>
+      <li class="nav__item">
+        <a
+          href="#"
+          class="btn"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+    <button class="nav-toggle">{% include "svgs/icon-hamburger.svg" %}</button>
+  </nav>
 </header>
