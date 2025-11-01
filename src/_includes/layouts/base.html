@@ -19,6 +19,7 @@
     />
   </head>
   <body>
+    {% include "partials/site-header.html" %}
     <main>{% block content %}{% endblock %}</main>
     <script src="{{ '/main.js' | url }}"></script>
   </body>
