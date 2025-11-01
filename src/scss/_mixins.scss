@@ -1,0 +1,87 @@
+@mixin fraunces {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+@mixin barlow {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+@mixin text-preset-1 {
+  @include fraunces;
+  font-size: 3.5rem;
+  letter-spacing: 9px;
+}
+
+@mixin text-preset-2 {
+  @include fraunces;
+  font-size: 2.625rem;
+  letter-spacing: 6px;
+}
+
+@mixin text-preset-3 {
+  @include fraunces;
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+}
+
+@mixin text-preset-4 {
+  @include fraunces;
+  font-size: 2rem;
+  letter-spacing: 0px;
+}
+
+@mixin text-preset-5 {
+  @include fraunces;
+  font-size: 1.75rem;
+  letter-spacing: 0px;
+}
+
+@mixin text-preset-6 {
+  @include fraunces;
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+}
+
+@mixin text-preset-7 {
+  @include fraunces;
+  font-size: 1.125rem;
+  letter-spacing: 0px;
+}
+
+@mixin text-preset-8 {
+  @include fraunces;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  line-height: 1.65;
+}
+
+@mixin text-preset-9 {
+  @include barlow;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 1.25;
+}
+
+@mixin text-preset-10 {
+  @include barlow;
+  font-size: 1.125rem;
+  letter-spacing: 0px;
+  line-height: 1.65;
+}
+
+@mixin text-preset-11 {
+  @include barlow;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  line-height: 1.7;
+}
+
+@mixin text-preset-12 {
+  @include barlow;
+  font-size: 0.875rem;
+  letter-spacing: 0px;
+  line-height: 1.8;
+}
