@@ -6,6 +6,27 @@
 
 .background-img {
   z-index: -1;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(3rem, 2.3838rem + 2.6291vw, 4.75rem);
+}
+
+.main-title {
+  @include mixins.text-preset-2;
+  text-transform: uppercase;
+  color: var(--colors-white);
+  text-align: center;
 }
 
 // HEADER
@@ -36,6 +57,12 @@ header {
   .nav-toggle {
     background: none;
     border: none;
+  }
+}
+
+@media (min-width: 48rem) {
+  .main-title {
+    @include mixins.text-preset-1;
   }
 }
 
