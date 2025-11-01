@@ -60,6 +60,65 @@ header {
   }
 }
 
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  &__title {
+    @include mixins.text-preset-4;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 4.25rem clamp(0rem, 2.3667rem + -3.698vw, 1.5rem);
+    max-width: 27.8125rem;
+    margin: 0 auto;
+    p {
+      @include mixins.text-preset-10;
+    }
+  }
+  &__img--text-overlay {
+    position: relative;
+    .image {
+      z-index: -1;
+    }
+    .text {
+      position: absolute;
+      bottom: 3.5rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 21.1875rem;
+      margin: 0 auto;
+      &--green {
+        color: var(--text-color-green);
+      }
+      &--blue {
+        color: var(--text-color-blue);
+      }
+      p {
+        @include mixins.text-preset-11;
+      }
+    }
+    .services__title {
+      @include mixins.text-preset-5;
+      &--green {
+        color: var(--header-text-color-green);
+      }
+      &--blue {
+        color: var(--header-text-color-blue);
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
 @media (min-width: 48rem) {
   .main-title {
     @include mixins.text-preset-1;
@@ -80,6 +139,21 @@ header {
       gap: 3rem;
       position: relative;
       visibility: visible;
+    }
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &__item {
+      text-align: start;
+      align-items: flex-start;
+    }
+
+    &__title {
+      @include mixins.text-preset-3;
+      align-self: center;
     }
   }
 }

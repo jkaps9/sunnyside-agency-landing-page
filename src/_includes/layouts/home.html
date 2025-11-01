@@ -54,38 +54,48 @@
       </a>
     </div>
     <div class="services__img services__img--text-overlay">
-      <picture>
-        <source
-          srcset="{{ '/assets/images/desktop/image-graphic-design.jpg' | url }}"
-          media="(width >= 48rem)"
-        />
-        <img
-          src="{{ '/assets/images/mobile/image-graphic-design.jpg' | url }}"
-          alt="orange slice"
-        />
-      </picture>
-      <h2 class="services__title">Graphic Design</h2>
-      <p>
-        Great design makes you memorable. We deliver artwork that underscores
-        your brand message and captures potential clients’ attention.
-      </p>
+      <div class="image">
+        <picture>
+          <source
+            srcset="
+              {{ '/assets/images/desktop/image-graphic-design.jpg' | url }}
+            "
+            media="(width >= 48rem)"
+          />
+          <img
+            src="{{ '/assets/images/mobile/image-graphic-design.jpg' | url }}"
+            alt="orange slice"
+          />
+        </picture>
+      </div>
+      <div class="text text--green">
+        <h2 class="services__title services__title--green">Graphic Design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
     </div>
     <div class="services__img services__img--text-overlay">
-      <picture>
-        <source
-          srcset="{{ '/assets/images/desktop/image-photography.jpg' | url }}"
-          media="(width >= 48rem)"
-        />
-        <img
-          src="{{ '/assets/images/mobile/image-photography.jpg' | url }}"
-          alt="orange slice"
-        />
-      </picture>
-      <h2 class="services__title">Photography</h2>
-      <p>
-        Increase your credibility by getting the most stunning, high-quality
-        photos that improve your business image.
-      </p>
+      <div class="image">
+        <picture>
+          <source
+            srcset="{{ '/assets/images/desktop/image-photography.jpg' | url }}"
+            media="(width >= 48rem)"
+          />
+          <img
+            src="{{ '/assets/images/mobile/image-photography.jpg' | url }}"
+            alt="orange slice"
+          />
+        </picture>
+      </div>
+      <div class="text text--blue">
+        <h2 class="services__title services__title--blue">Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
     </div>
   </section>
 {% endblock %}
