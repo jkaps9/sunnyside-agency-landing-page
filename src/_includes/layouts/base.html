@@ -20,6 +20,18 @@
   </head>
   <body>
     {% include "partials/site-header.html" %}
+    <div class="background-img">
+      <picture>
+        <source
+          srcset="{{ '/assets/images/desktop/image-header.jpg' | url }}"
+          media="(width >= 64rem)"
+        />
+        <img
+          src="{{ '/assets/images/mobile/image-header.jpg' | url }}"
+          alt="orange slice"
+        />
+      </picture>
+    </div>
     <main>{% block content %}{% endblock %}</main>
     <script src="{{ '/main.js' | url }}"></script>
   </body>

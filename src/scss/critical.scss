@@ -4,6 +4,18 @@
 @use "mixins";
 @use "sass:map";
 
+body {
+  position: relative;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 // HEADER
 header {
   .header__nav {
