@@ -64,3 +64,32 @@ a {
   min-width: 8.75rem;
   min-height: 3.5rem;
 }
+
+a.learn-more {
+  @include mixins.text-preset-8;
+  display: inline-block;
+  color: var(--header-text-color-primary);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  min-width: 137px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: var(--colors-yellow-500);
+    border-radius: 28px;
+    opacity: 0.25;
+    z-index: -1;
+  }
+
+  &--red {
+    &::after {
+      background-color: var(--colors-red-400);
+    }
+  }
+}
