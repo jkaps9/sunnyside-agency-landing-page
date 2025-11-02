@@ -34,12 +34,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  padding: 2rem clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem) 0;
   .header__nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
     max-width: 85rem;
-    padding: 2rem clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem) 0;
+
     position: relative;
   }
 
@@ -62,10 +63,34 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   header {
     .nav__list.visible {
+      align-items: center;
+      background-color: var(--colors-white);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2.5rem 0;
+      top: calc(100% + 1.625rem + 1.5rem);
       visibility: visible;
+      width: 100%;
+      z-index: 1000;
+      svg {
+        position: absolute;
+        top: -1.5rem;
+        right: 0;
+      }
+      .nav__item {
+        @include mixins.text-preset-9;
+        color: var(--text-color-primary);
+        &:hover {
+          color: var(--header-text-color-primary);
+        }
+      }
+      .btn {
+        background-color: var(--colors-yellow-500);
+      }
     }
   }
 }
