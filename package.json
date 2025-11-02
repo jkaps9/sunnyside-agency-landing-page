@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build-ghpages": "NODE_ENV=production npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/sunnyside-agency-landing-page/",
     "start": "npx eleventy --serve",
     "lint": "prettier --write ."
   },
