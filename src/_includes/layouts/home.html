@@ -151,4 +151,58 @@
       </div>
     </div>
   </section>
+
+  <section class="gallery">
+    <picture>
+      <source
+        srcset="
+          {{ '/assets/images/desktop/image-gallery-milkbottles.jpg' | url }}
+        "
+        media="(width >= 48rem)"
+      />
+      <img
+        src="{{ '/assets/images/mobile/image-gallery-milkbottles.jpg' | url }}"
+        alt="Milk bottles"
+        class="gallery__image"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="{{ '/assets/images/desktop/image-gallery-orange.jpg' | url }}"
+        media="(width >= 48rem)"
+      />
+      <img
+        src="{{ '/assets/images/mobile/image-gallery-orange.jpg' | url }}"
+        alt="Orange"
+        class="gallery__image"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="{{ '/assets/images/desktop/image-gallery-cone.jpg' | url }}"
+        media="(width >= 48rem)"
+      />
+      <img
+        src="{{ '/assets/images/mobile/image-gallery-cone.jpg' | url }}"
+        alt="Ice cream cone"
+        class="gallery__image"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="
+          {{ '/assets/images/desktop/image-gallery-sugarcubes.jpg' | url }}
+        "
+        media="(width >= 48rem)"
+      />
+      <img
+        src="{{ '/assets/images/mobile/image-gallery-sugar-cubes.jpg' | url }}"
+        alt="Sugar cubes"
+        class="gallery__image"
+      />
+    </picture>
+  </section>
 {% endblock %}

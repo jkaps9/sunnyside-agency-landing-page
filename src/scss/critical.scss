@@ -170,6 +170,11 @@ header {
   }
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media (min-width: 48rem) {
   .services {
     margin: 0 auto;
@@ -223,5 +228,9 @@ header {
     &__list {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
