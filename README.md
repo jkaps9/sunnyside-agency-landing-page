@@ -10,7 +10,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 
@@ -24,24 +23,25 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.png)
+<img src="./screenshot.png" alt="screenshot" width="500"/>
 
 ### Links
 
-- Solution URL: [https://github.com/jkaps9/testimonials-grid-section-main](https://github.com/jkaps9/testimonials-grid-section-main)
-- Live Site URL:  [https://jkaps9.github.io/testimonials-grid-section-main/](https://jkaps9.github.io/testimonials-grid-section-main/)
+- Solution URL: [https://github.com/jkaps9/sunnyside-agency-landing-page](https://github.com/jkaps9/sunnyside-agency-landing-page)
+- Live Site URL: [https://jkaps9.github.io/sunnyside-agency-landing-page/](https://jkaps9.github.io/sunnyside-agency-landing-page/)
 
 ## My process
 
 ### Built with
 
+- Semantic HTML5 markup
+- CSS custom properties
 - Flexbox
-- CSS Grid
-
-### What I learned
-
-Practiced basic styling learned in Udemy HTML and CSS course. Improved on my CSS Grid skills
+- Mobile-first workflow
+- [11ty](https://11ty.dev) - Static Site Generator
+- [sass](https://sass-lang.com/) - CSS Preprocessor
 
 ## Author
 
+- Website - [Josh](https://www.joshfkaplan.com)
 - Frontend Mentor - [@jkaps9](https://www.frontendmentor.io/profile/jkaps9)
