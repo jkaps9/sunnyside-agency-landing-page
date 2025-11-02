@@ -126,6 +126,12 @@ header {
 }
 
 @media (min-width: 64rem) {
+  body {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
   header {
     .nav-toggle {
       height: 0;
@@ -145,7 +151,6 @@ header {
   .services {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-
     &__item {
       text-align: start;
       align-items: flex-start;
