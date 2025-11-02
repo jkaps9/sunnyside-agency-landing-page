@@ -51,6 +51,9 @@ header {
   .nav__item {
     @include mixins.text-preset-10;
     color: var(--colors-white);
+    &:hover {
+      color: var(--colors-blue-950);
+    }
   }
 
   .nav-toggle {
@@ -207,12 +210,23 @@ header {
   .nav__item {
     @include mixins.text-preset-10;
     color: var(--colors-green-500);
+    &:hover {
+      color: var(--colors-white);
+    }
   }
 
   &__socials {
     align-items: center;
     display: flex;
     gap: 1.5rem;
+
+    .socials__item {
+      &:hover {
+        path {
+          fill: var(--colors-white);
+        }
+      }
+    }
   }
 }
 
