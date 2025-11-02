@@ -29,7 +29,6 @@
   text-align: center;
 }
 
-// HEADER
 header {
   position: absolute;
   top: 0;
@@ -119,7 +118,59 @@ header {
   }
 }
 
+.testimonials {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.5rem, 2.0687rem + 6.1069vw, 5rem);
+  padding: clamp(3.4375rem, 1.0827rem + 10.0469vw, 10.125rem) 0;
+
+  &__title {
+    @include mixins.text-preset-6;
+    color: var(--colors-grey-400);
+    text-transform: uppercase;
+  }
+
+  &__list {
+    align-items: center;
+    display: grid;
+    gap: clamp(2rem, 5.2143rem + -3.5714vw, 3.5rem);
+    grid-template-columns: 1fr;
+    padding: 0 clamp(1.5rem, -1.559rem + 13.0516vw, 10.1875rem);
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__quote {
+    @include mixins.text-preset-10;
+    color: var(--colors-grey-600);
+    margin: 3.625rem 0 clamp(2rem, -0.8571rem + 5.9524vw, 4.5rem);
+  }
+
+  &__name {
+    @include mixins.text-preset-7;
+    color: var(--header-text-color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  &__job-title {
+    @include mixins.text-preset-12;
+    color: var(--colors-grey-400);
+  }
+}
+
 @media (min-width: 48rem) {
+  .services {
+    margin: 0 auto;
+    &__img {
+      margin: 0 auto;
+    }
+  }
   .main-title {
     @include mixins.text-preset-1;
   }
