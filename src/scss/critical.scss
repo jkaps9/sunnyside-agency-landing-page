@@ -320,6 +320,15 @@ header {
       align-items: flex-start;
     }
 
+    .col-one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .col-two {
+      grid-column: 2;
+    }
+
     &__title {
       @include mixins.text-preset-3;
       align-self: center;
