@@ -146,6 +146,12 @@ header {
     text-align: center;
   }
 
+  &__image {
+    border-radius: 100vw;
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+  }
+
   &__quote {
     @include mixins.text-preset-10;
     color: var(--colors-grey-600);
@@ -210,6 +216,12 @@ header {
     &__title {
       @include mixins.text-preset-3;
       align-self: center;
+    }
+  }
+
+  .testimonials {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
