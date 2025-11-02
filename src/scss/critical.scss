@@ -47,6 +47,10 @@ header {
   .nav__list {
     position: absolute;
     visibility: hidden;
+    svg {
+      position: absolute;
+      visibility: hidden;
+    }
   }
 
   .nav__item {
@@ -77,9 +81,9 @@ header {
       width: 100%;
       z-index: 1000;
       svg {
-        position: absolute;
-        top: -1.5rem;
         right: 0;
+        top: -1.5rem;
+        visibility: visible;
       }
       .nav__item {
         @include mixins.text-preset-9;
